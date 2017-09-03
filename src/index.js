@@ -13,10 +13,15 @@ import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 
+
+require('./assets/stylesheets/base.scss');
+require('./assets/stylesheets/lemonade.scss');
+require('./assets/stylesheets/navigation.scss');
+
 //==================
 // This command actually renders the component into
 // the element with the id #app which we added in
 // the index.html file. Instead of serving the <app /> like we did previously
-// we now serve the Router we defined in the router.js file. 
+// we now serve the Router we defined in the router.js file.
 //==================
 ReactDOM.render(<Router history={browserHistory} routes={routes} />, document.querySelector('#app'));
